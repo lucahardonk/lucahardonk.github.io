@@ -1,29 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Luca Hardonk – Maker Portfolio</title>
-  <style>
-    body { font-family: Arial; margin: 40px; max-width: 800px; }
-    h1 { color: #333; }
-    a { color: #0077cc; }
-  </style>
+<meta charset="UTF-8">
+<title>Luca Hardonk – Maker Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  /* ---------------- GLOBAL STYLE ---------------- */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f2f2f2, #e7efff);
+    color: #333;
+  }
+
+  h1, h2 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* ---------------- HEADER BANNER ---------------- */
+  .hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #6ec6ff, #a68cff);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-size: 2.8em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    opacity: 0.95;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------------- PROJECT GRID ---------------- */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: #444;
+  }
+
+  .card p {
+    color: #666;
+    font-size: 0.95em;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: bold;
+  }
+
+  /* Playful hover background */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,140,255,0.25), rgba(255,255,255,0));
+    transform: scale(0);
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+
+  .card:hover::before {
+    transform: scale(1);
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.9em;
+  }
+
+</style>
 </head>
+
 <body>
-  <h1>Welcome to my Maker Portfolio</h1>
-  <p>Hi! I'm Luca, and these are my projects.</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/lucahardonk/Autonomous_Drive_Project_Ceci">Autonomous Drive Project Ceci</a></li>
-    <li><a href="https://github.com/lucahardonk/lovely_crazy_diary">Lovely Crazy Diary</a></li>
-    <li><a href="https://github.com/lucahardonk/next_gen_network_slicing">Next Gen Network Slicing</a></li>
-    <li><a href="https://github.com/lucahardonk/personal_password_manager">Personal Password Manager</a></li>
-    <li><a href="https://github.com/lucahardonk/MachineLearningExercises">Machine Learning Exercises</a></li>
-    <li><a href="https://github.com/lucahardonk/room_presence_detection">Room Presence Detection</a></li>
-  </ul>
+<!-- HERO SECTION -->
+<div class="hero">
+  <h1>🚀 Luca Hardonk – Maker Portfolio</h1>
+  <p>Robotics • AI • Electronics • Coding • 3D Printing</p>
+</div>
 
-  <p>More coming soon…</p>
+<h2>My Projects</h2>
+
+<!-- PROJECT GRID -->
+<div class="project-grid">
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/Autonomous_Drive_Project_Ceci')">
+    <h3>Autonomous Drive Project Ceci</h3>
+    <p>A ROS2-based autonomous Ackermann steering car.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/lovely_crazy_diary')">
+    <h3>Lovely Crazy Diary</h3>
+    <p>A private project for Cecilia’s mother.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/next_gen_network_slicing')">
+    <h3>Next Gen Network Slicing</h3>
+    <p>UniTrento project on SDN, Ryu, Mininet & performance slicing.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/personal_password_manager')">
+    <h3>Password Manager</h3>
+    <p>IoT course final exam – secure password vault in C++.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/MachineLearningExercises')">
+    <h3>Machine Learning Exercises</h3>
+    <p>Collection of ML code experiments and assignments.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+  <div class="card" onclick="openLink('https://github.com/lucahardonk/room_presence_detection')">
+    <h3>Room Presence Detection</h3>
+    <p>Arduino/C++ system detecting presence with sensors and logic.</p>
+    <a href="#">View Repository →</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Luca Hardonk — Built with ❤️ using GitHub Pages
+</footer>
+
+<script>
+function openLink(url) {
+  window.location.href = url;
+}
+</script>
+
 </body>
 </html>
-
