@@ -812,7 +812,7 @@ section,
 }
 
 .hero .floating-card.card-1 {
-  top: 10%;
+  top: 7%;
   left: -10%;
   animation-delay: 0s;
 }
@@ -825,9 +825,9 @@ section,
 }
 
 .hero .floating-card.card-2 {
-  top: 60%;
+  top: 50%;
   right: -15%;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @media (max-width: 768px) {
@@ -840,7 +840,7 @@ section,
 .hero .floating-card.card-3 {
   bottom: 15%;
   left: -5%;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 @media (max-width: 768px) {
@@ -3171,4 +3171,15 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+/* Fade-out for the logo on scroll */
+#header .logo {
+  transition: opacity 0.4s ease;
+}
+
+#header .logo.fade-out {
+  opacity: 0;
+  pointer-events: none; /* non obbligatorio, ma evita clic mentre è invisibile */
 }
