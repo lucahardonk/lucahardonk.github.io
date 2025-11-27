@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Index - Style Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
+  <script>
+  // ======= GLOBAL PORTFOLIO STATS =======
+  const GLOBAL_STATS = {
+    projectsCompleted: 30,
+    yearsExperience: 5,
+    systemsDeployed: 10
+  };
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -111,18 +123,18 @@
             <div class="content-wrapper">
               <h1 class="hero-title">Creative <span class="typed" data-typed-items="Engineer, Software Developer, 3D Designer, Roboteer "></span></h1>
               <p class="lead">I design innovative solutions that blend technology and creativity. My main focus is Robotics, an interdisciplinary field where engineering, mechanics, AI, and software development converge.</p>
-
+              <!--use global varible defined at top, no hard coded values -->
               <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1">0</span>
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1">0</span>
                   <span class="stat-label">Projects Completed</span>
                 </div>
                 <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1">0</span>
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1">0</span>
                   <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1">0</span>
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1">0</span>
                   <span class="stat-label">Systems deployed</span>
                 </div>
               </div>
@@ -289,87 +301,9 @@
           <div class="col-lg-8">
             <div class="skills-grid">
               <div class="row g-4">
+
+                <!-- 1. Design & Tools -->
                 <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-code-slash"></i>
-                      <h3>Frontend Development</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">HTML/CSS</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">JavaScript</span>
-                          <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Vue.js</span>
-                          <span class="skill-percentage">82%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Frontend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-server"></i>
-                      <h3>Backend Development</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">PHP</span>
-                          <span class="skill-percentage">78%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Laravel</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">MySQL</span>
-                          <span class="skill-percentage">72%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Backend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-palette"></i>
@@ -378,7 +312,7 @@
                     <div class="skills-animation">
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Figma</span>
+                          <span class="skill-name">Fusion 360</span>
                           <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-bar progress">
@@ -388,17 +322,17 @@
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Photoshop</span>
-                          <span class="skill-percentage">70%</span>
+                          <span class="skill-name">Blender</span>
+                          <span class="skill-percentage">10%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Illustrator</span>
+                          <span class="skill-name">Cura Slicer</span>
                           <span class="skill-percentage">68%</span>
                         </div>
                         <div class="skill-bar progress">
@@ -409,20 +343,21 @@
                   </div><!-- End Design Card -->
                 </div>
 
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
+                <!-- 2. Cloud & DevOps -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-cloud"></i>
-                      <h3>Cloud &amp; DevOps</h3>
+                      <h3>DevOps</h3>
                     </div>
                     <div class="skills-animation">
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">AWS</span>
-                          <span class="skill-percentage">76%</span>
+                          <span class="skill-name">Git</span>
+                          <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
@@ -438,32 +373,115 @@
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Git</span>
-                          <span class="skill-percentage">90%</span>
+                          <span class="skill-name">Ros2</span>
+                          <span class="skill-percentage">48%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
                   </div><!-- End DevOps Card -->
                 </div>
+
+                <!-- 3. Backend Development (moved to position 3) -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-server"></i>
+                      <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Flask / Python</span>
+                          <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">MQTT</span>
+                          <span class="skill-percentage">10%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">C++</span>
+                          <span class="skill-percentage">20%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Backend Card -->
+                </div>
+
+                <!-- 4. Frontend Development (moved to position 4) -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-code-slash"></i>
+                      <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">JavaScript</span>
+                          <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">HTML5</span>
+                          <span class="skill-percentage">20%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">CSS3</span>
+                          <span class="skill-percentage">20%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Frontend Card -->
+                </div>
+
               </div>
             </div><!-- End Skills Grid -->
           </div>
 
+
           <div class="col-lg-4">
             <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
               <h3>Professional Expertise</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
+              <p>I am skilled in computer systems, Linux environments (WSL), ROS2, and full-stack development. I build custom servers and networks, design smart-home and embedded systems and develop robotics platforms. I also specialize in rapid prototyping, 3D modelling and creating functional hardware-software solutions across many different projects.</p>
               <div class="summary-stats">
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
                   <div class="stat-circle">
                     <i class="bi bi-trophy"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">5+</span>
+                    <span class="stat-number">0+</span>
                     <span class="stat-label">Years Experience</span>
                   </div>
                 </div>
@@ -473,18 +491,18 @@
                     <i class="bi bi-diagram-3"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">50+</span>
+                    <span class="stat-number stat-projects">0+</span>
                     <span class="stat-label">Projects Completed</span>
                   </div>
                 </div>
 
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
                   <div class="stat-circle">
-                    <i class="bi bi-people"></i>
+                    <i class="bi bi-pc"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">30+</span>
-                    <span class="stat-label">Happy Clients</span>
+                    <span class="stat-number stat-systems">0+</span>
+                    <span class="stat-label">Systems Deployed</span>
                   </div>
                 </div>
               </div>
@@ -492,10 +510,10 @@
               <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
                 <h4>Certifications</h4>
                 <div class="badge-list">
-                  <div class="skill-badge">AWS Certified</div>
-                  <div class="skill-badge">Laravel Expert</div>
-                  <div class="skill-badge">Vue.js Developer</div>
-                  <div class="skill-badge">UI/UX Design</div>
+                  <div class="skill-badge">ROS2 Certified</div>
+                  <div class="skill-badge">3D Printing </div>
+                  <div class="skill-badge">Code Developer</div>
+                  <div class="skill-badge">3D Designer</div>
                 </div>
               </div>
             </div><!-- End Skills Summary -->
@@ -512,7 +530,7 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Labor hominem nobilitat</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -522,7 +540,7 @@
             <div class="experience-section">
               <div class="section-header">
                 <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
-                <p class="section-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum tortor quam.</p>
+                <p class="section-subtitle">Despite being in the process of completing my degree, I have gained practical experience through professional grade projects now deployed and used by third parties.</p>
               </div>
 
               <div class="experience-cards">
@@ -577,7 +595,7 @@
             <div class="education-section">
               <div class="section-header">
                 <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.</p>
+                <p class="section-subtitle">High-school academic merit scholarship, Best English Student Award (UK), excellence in Robotics exams. </p>
               </div>
 
               <div class="education-timeline">
@@ -587,11 +605,11 @@
                   <div class="timeline-marker"></div>
                   <div class="education-content">
                     <div class="degree-header">
-                      <h3>Master of Computer Science</h3>
-                      <span class="year">2015 - 2017</span>
+                      <h3>Academic year Abbey College Cambrige, UK</h3>
+                      <span class="year">2019 - 2020</span>
                     </div>
-                    <h4 class="institution">Tempus University</h4>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec quam felis ultricies nec.</p>
+                    <h4 class="institution">Pre University year</h4>
+                    <p>In this year i focused on mastering the English language to prepare for higher education, revising Math and Physics for University, meanwhile learing the piano as autodidact.</p>
                   </div>
                 </div>
 
@@ -599,11 +617,11 @@
                   <div class="timeline-marker"></div>
                   <div class="education-content">
                     <div class="degree-header">
-                      <h3>Bachelor of Information Technology</h3>
-                      <span class="year">2011 - 2015</span>
+                      <h3>Undergraduate Mechatronics engineering</h3>
+                      <span class="year">2021 - 2023</span>
                     </div>
-                    <h4 class="institution">Rhoncus Institute of Technology</h4>
-                    <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
+                    <h4 class="institution">Trento University</h4>
+                    <p>Although this years have not been officialized by a degree, I Have Studied foundational concepts in Physics and Metallurgy, but not enought computer science for a proper robotics engineer</p>
                   </div>
                 </div>
 
@@ -611,11 +629,23 @@
                   <div class="timeline-marker"></div>
                   <div class="education-content">
                     <div class="degree-header">
-                      <h3>Certificate in Digital Innovation</h3>
-                      <span class="year">2020</span>
+                      <h3>Undergraduate in Electrical, Comunication and Information Technology engineering</h3>
+                      <span class="year">2023-2025</span>
                     </div>
-                    <h4 class="institution">Ligula Academy</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh donec sodales sagittis magna.</p>
+                    <h4 class="institution">Trento University</h4>
+                    <p>In this 2 years I managed to achieve a 3 year Undergraduate degree in IT, laying a strong software foundation for robotics </p>
+                  </div>
+                </div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="100">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Master in Artificial Intelligence for robotics</h3>
+                      <span class="year">2025-Present</span>
+                    </div>
+                    <h4 class="institution">Trento University</h4>
+                    <p>Curerntly studing AI in the emerging AI era, with the intend of building smarter robots </p>
                   </div>
                 </div>
               </div>
@@ -1399,6 +1429,35 @@
     }
   });
   </script>
+
+<!-- ==== GLOBAL STAT SYNCHRONIZATION SCRIPT ==== -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // HERO counters
+    const heroProjects = document.querySelector("#hero .stat-item:nth-child(1) .purecounter");
+    const heroYears    = document.querySelector("#hero .stat-item:nth-child(2) .purecounter");
+    const heroSystems  = document.querySelector("#hero .stat-item:nth-child(3) .purecounter");
+
+    heroProjects?.setAttribute("data-purecounter-end", GLOBAL_STATS.projectsCompleted);
+    heroYears?.setAttribute("data-purecounter-end", GLOBAL_STATS.yearsExperience);
+    heroSystems?.setAttribute("data-purecounter-end", GLOBAL_STATS.systemsDeployed);
+
+    // Skills Summary – Years
+    const summaryYears = document.querySelector(".skills-summary .stat-item .stat-number");
+    summaryYears && (summaryYears.innerText = GLOBAL_STATS.yearsExperience + "+");
+
+    // Skills Summary – Projects
+    const summaryProjects = document.querySelector(".skills-summary .stat-projects");
+    summaryProjects && (summaryProjects.innerText = GLOBAL_STATS.projectsCompleted + "+");
+
+    // Skills Summary – Systems Deployed
+    const summarySystems = document.querySelector(".skills-summary .stat-systems");
+    summarySystems && (summarySystems.innerText = GLOBAL_STATS.systemsDeployed + "+");
+  });
+  </script>
+
+
+
 
 
   <!-- Main JS File -->
